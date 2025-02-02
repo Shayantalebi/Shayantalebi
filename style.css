@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
+    }
+ :root {
+     --primary-color: #c6c3c3;
+     --second-color:#ffffff;
+     --black-color:#000000;
+ }
+ body {
+     background-image:
+     url("");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+ }
+ a {
+     text-decoration: none;
+     color: var(--second-color);
+ }
+ a:hover {
+     text-decoration: underline;
+ }
+ .wrapper {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: rgba(0, 0, 0, 0.2);
+ }
