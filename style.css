@@ -1,39 +1,49 @@
-body {
-    background-image:
-        url("shayan.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  align-items: center;
 }
-
-a {
-    text-decoration: none;
-    color: var(--second-color);
+li {
+  list-style: none;
+  font-weight: 900;
 }
-
-a:hover {
-    text-decoration: underline;
+li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+li a::before {
+  inset-block-start: -3px;
+  transform-origin: left;
 }
-
-:root {
-    --primary-color: #c6c3c3;
-    --second-color: #ffffff;
-    --black-color: #000000;
+li a ::after {
+  inset-block-end: -3px;
+  transform-origin: right;
 }
-
-.wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  block-size: 80vh;
+  position: relative;
+  inset-inline-start: -250px;
+  gap: 50px;
+}
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.bar {
+  inline-size: 20px;
+  block-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
